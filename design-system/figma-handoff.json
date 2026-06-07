@@ -1,0 +1,169 @@
+{
+  "version": "1.0.0",
+  "exportDate": "2024-01-01T00:00:00Z",
+  "designSystem": {
+    "colors": {
+      "brand-navy": {
+        "value": "#1a2332",
+        "type": "color",
+        "description": "Primary brand color for headers and footers",
+        "figmaPaint": {
+          "type": "SOLID",
+          "color": { "r": 0.102, "g": 0.137, "b": 0.196 },
+          "opacity": 1
+        }
+      },
+      "brand-gold": {
+        "value": "#d4a843",
+        "type": "color",
+        "description": "Secondary brand color for CTAs and accents",
+        "figmaPaint": {
+          "type": "SOLID",
+          "color": { "r": 0.831, "g": 0.659, "b": 0.263 },
+          "opacity": 1
+        }
+      },
+      "brand-cream": {
+        "value": "#faf8f0",
+        "type": "color",
+        "description": "Background color for light sections",
+        "figmaPaint": {
+          "type": "SOLID",
+          "color": { "r": 0.98, "g": 0.973, "b": 0.941 },
+          "opacity": 1
+        }
+      },
+      "brand-charcoal": {
+        "value": "#2d3748",
+        "type": "color",
+        "description": "Body text and secondary elements",
+        "figmaPaint": {
+          "type": "SOLID",
+          "color": { "r": 0.176, "g": 0.216, "b": 0.282 },
+          "opacity": 1
+        }
+      },
+      "primary-500": {
+        "value": "#0ea5e9",
+        "type": "color",
+        "description": "Primary blue for interactive elements",
+        "figmaPaint": {
+          "type": "SOLID",
+          "color": { "r": 0.055, "g": 0.647, "b": 0.914 },
+          "opacity": 1
+        }
+      },
+      "primary-600": {
+        "value": "#0284c7",
+        "type": "color",
+        "description": "Primary blue hover state",
+        "figmaPaint": {
+          "type": "SOLID",
+          "color": { "r": 0.008, "g": 0.518, "b": 0.78 },
+          "opacity": 1
+        }
+      }
+    },
+    "typography": {
+      "heading": {
+        "fontFamily": "Playfair Display",
+        "figmaFontName": { "family": "Playfair Display", "style": "Bold" },
+        "weights": [700, 800],
+        "sizes": {
+          "h1": { "fontSize": 48, "lineHeight": 1.25, "letterSpacing": -0.02 },
+          "h2": { "fontSize": 36, "lineHeight": 1.25, "letterSpacing": -0.02 },
+          "h3": { "fontSize": 30, "lineHeight": 1.375, "letterSpacing": 0 },
+          "h4": { "fontSize": 24, "lineHeight": 1.5, "letterSpacing": 0 }
+        }
+      },
+      "body": {
+        "fontFamily": "Inter",
+        "figmaFontName": { "family": "Inter", "style": "Regular" },
+        "weights": [400, 500, 600, 700],
+        "sizes": {
+          "xs": { "fontSize": 12, "lineHeight": 1.5 },
+          "sm": { "fontSize": 14, "lineHeight": 1.5 },
+          "base": { "fontSize": 16, "lineHeight": 1.5 },
+          "lg": { "fontSize": 18, "lineHeight": 1.625 }
+        }
+      },
+      "mono": {
+        "fontFamily": "JetBrains Mono",
+        "figmaFontName": { "family": "JetBrains Mono", "style": "Regular" },
+        "weights": [400, 500],
+        "sizes": {
+          "code": { "fontSize": 14, "lineHeight": 1.5 }
+        }
+      }
+    },
+    "spacing": {
+      "baseUnit": 4,
+      "scale": [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64],
+      "figmaSpacing": {
+        "xs": 4,
+        "sm": 8,
+        "md": 16,
+        "lg": 24,
+        "xl": 32,
+        "2xl": 48
+      }
+    },
+    "components": {
+      "button": {
+        "variants": {
+          "primary": {
+            "fills": [{ "type": "SOLID", "color": { "r": 0.055, "g": 0.647, "b": 0.914 } }],
+            "cornerRadius": 8,
+            "padding": { "horizontal": 24, "vertical": 12 }
+          },
+          "brand": {
+            "fills": [{ "type": "SOLID", "color": { "r": 0.831, "g": 0.659, "b": 0.263 } }],
+            "cornerRadius": 8,
+            "padding": { "horizontal": 24, "vertical": 12 }
+          },
+          "outline": {
+            "strokes": [{ "type": "SOLID", "color": { "r": 0.055, "g": 0.647, "b": 0.914 } }],
+            "strokeWeight": 2,
+            "cornerRadius": 8,
+            "padding": { "horizontal": 24, "vertical": 12 }
+          }
+        }
+      },
+      "card": {
+        "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1 } }],
+        "cornerRadius": 12,
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "color": { "r": 0, "g": 0, "b": 0, "a": 0.1 },
+            "offset": { "x": 0, "y": 4 },
+            "radius": 6,
+            "spread": 0
+          }
+        ],
+        "padding": 24
+      }
+    },
+    "breakpoints": {
+      "xs": 320,
+      "sm": 640,
+      "md": 768,
+      "lg": 1024,
+      "xl": 1280,
+      "2xl": 1536
+    },
+    "animations": {
+      "fadeIn": {
+        "duration": 500,
+        "easing": "ease-in-out",
+        "figmaTransition": "SMART_ANIMATE"
+      },
+      "slideUp": {
+        "duration": 600,
+        "easing": "ease-out",
+        "figmaTransition": "MOVE_IN",
+        "direction": "UP"
+      }
+    }
+  }
+}

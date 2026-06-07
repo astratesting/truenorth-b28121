@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#1a2332"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#1a2332"/>
+      <stop offset="100%" stop-color="#2d3748"/>
+    </linearGradient>
+  </defs>
+  <text x="600" y="280" font-family="Playfair Display, serif" font-size="72" font-weight="800" fill="#faf8f0" text-anchor="middle">TrueNorth</text>
+  <text x="600" y="350" font-family="Inter, sans-serif" font-size="28" fill="#d4a843" text-anchor="middle">Find Your Path</text>
+  <text x="600" y="420" font-family="Inter, sans-serif" font-size="20" fill="#faf8f0" text-anchor="middle" opacity="0.9">Navigate your path to success with confidence and clarity</text>
+  <rect x="500" y="480" width="200" height="50" rx="8" fill="#d4a843"/>
+  <text x="600" y="512" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#1a2332" text-anchor="middle">Get Started</text>
+</svg>
