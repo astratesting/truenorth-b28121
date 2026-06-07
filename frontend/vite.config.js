@@ -6,15 +6,18 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './frontend/src'),
+      '@': path.resolve(__dirname, './src'),
     },
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/test/setup.ts',
+    css: true,
   },
   build: {
     outDir: 'dist',
-    sourcemap: true,
-  },
-  server: {
-    port: 3000,
-    host: true,
+    assetsDir: 'assets',
+    minify: 'terser',
   },
 })
